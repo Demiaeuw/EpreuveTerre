@@ -18,6 +18,5 @@ def afficher_alphabet(lettreDepart):
     index = alphabet.index(lettreDepart)
     print(alphabet[index:])
 
-if __name__ == '__main__':
-    lettre_choisie = choisir_lettre()
-    afficher_alphabet(lettre_choisie)
+lettre_choisie = choisir_lettre()
+afficher_alphabet(lettre_choisie)
