@@ -4,14 +4,5 @@
 #je dois utiliser cette lettre pour lancer ma fonction 
 #je dois lancer cette fonction
 
-import sys
 
 alphabet = "abcdefghijklmnopqrstuvwxyz"
-lettreDeDepart = "e"
-
-
-
-
-def alphabet_a_partir_de():
-    print(alphabet.split(lettreDeDepart)[-1])
-
