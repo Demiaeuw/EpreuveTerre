@@ -18,5 +18,5 @@ def afficher_alphabet(lettreDepart):
     index = alphabet.index(lettreDepart)
     print(alphabet[index:])
 
-lettre_choisie = choisir_lettre()
-afficher_alphabet(lettre_choisie)
+lettreChoisie = choisir_lettre()
+afficher_alphabet(lettreChoisie)

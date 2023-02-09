@@ -23,15 +23,3 @@ try:
         print("impair")  
 except ValueError:
     print("tu ne me la mettra pas val l'envers")
-
-"""
-if type(val) is  int:
-    if val == 0:
-        print("impossible")
-    elif val % 2 == 0:
-        print("pair")
-    else:
-        print("impair")
-else:
-    print("tu ne me la mettra pas val l'envers")
-"""
