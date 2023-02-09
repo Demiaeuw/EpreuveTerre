@@ -11,16 +11,27 @@
 
 import sys
 
-a = int(sys.argv[1])
+val = sys.argv[1]
 
-
-
-if type(a) is  int:
-    if a == 0:
+try:
+    val = int(val)
+    if val == 0:
         print("impossible")
-    elif a % 2 == 0:
+    elif val % 2 == 0:
+        print("pair")
+    else:
+        print("impair")  
+except ValueError:
+    print("tu ne me la mettra pas val l'envers")
+
+"""
+if type(val) is  int:
+    if val == 0:
+        print("impossible")
+    elif val % 2 == 0:
         print("pair")
     else:
         print("impair")
 else:
-    print("tu ne me la mettra pas a l'envers")
+    print("tu ne me la mettra pas val l'envers")
+"""
