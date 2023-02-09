@@ -3,9 +3,9 @@
 
 import sys
 
-def display_arguments():
+def affiche_arguments():
     for i in range(1, len(sys.argv)):
         print(sys.argv[i])
 
 if __name__ == '__main__':
-    display_arguments()
+    affiche_arguments()
