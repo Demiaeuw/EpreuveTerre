@@ -11,25 +11,10 @@ partie = monHeure.split(":")
 heures = partie[0]
 minutes_et_jour = partie[1][:-2]
 minutes = partie[1][:+2]
-jour = partie[1][-2:]
+jourNuit = partie[1][-2:]
 
 
 
-if len(sys.argv) < 2:
-    print("Entrer une heure au format hh:mm(am/pm)")
-else:
-    def changement(heures):
-        if jour == "am":
-            return str(heures) + ":" + str(minutes)
-        else:
-            return str(heures + 12) + ":" + str(minutes)
-    heuresEU = changement(heures)
-    print(heuresEU)
-
-
-
-
-"""
 import sys
 
 monHeure = sys.argv[1]
@@ -50,4 +35,3 @@ else:
     heuresEU = changement(heures)
     print(heuresEU)
 
-"""
