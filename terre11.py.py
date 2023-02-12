@@ -3,39 +3,7 @@
 
 #Attention : midi et minuit.
 
-"""
 
-le format 24 = 13:45
-le format 12 = 01:45 PM
-minuit  = 12:00 AM
-midi    = 12: PM
-
-"""
-
-
-"""
-
-import sys
-
-# Vérification du nombre d'arguments
-if len(sys.argv) < 2:
-    print("Veuillez fournir une heure au format hh:mm.")
-else:
-    # Récupération de l'heure à partir de sys.argv
-    heure = sys.argv[1]
-
-    # Décomposition de l'heure en heures et minutes
-    parties = heure.split(":")
-
-    # Conversion des parties en entiers
-    heures = int(parties[0])
-    minutes = int(parties[1])
-
-    # Affichage du résultat
-    print("Heures :", heures)
-    print("Minutes :", minutes)
-
-"""
 import sys
 
 monHeure = sys.argv[1]
