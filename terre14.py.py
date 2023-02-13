@@ -75,7 +75,16 @@ for argument in arguments:
             nombrePasPremier.append(argument)
     except ValueError:
         nombrePasPremier.append(argument)
-
-if nombrePasPremier:
+if len(arguments) <= 1:
+    print("Ce n'est pas une liste !")
+elif nombrePasPremier:
     non_valides = ", ".join(nombrePasPremier)
     print(f"'{non_valides}', ne sont pas des entiers premiers !")
+elif nombrePremier:
+    try:
+        if all(nombrePremier[i] <= nombrePremier[i+1] for i in range(len(nombrePremier)-1)):
+            print("Triée !")
+        else:
+            print("Pas triée !")
+    except ValueError:
+        print("Erreur")
