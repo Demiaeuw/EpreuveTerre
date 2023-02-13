@@ -7,7 +7,7 @@
 
 import sys
 
-def is_prime(n):
+def nombre_premier(n):
     if n <= 1:
         return False
     for i in range(2, n):
@@ -17,7 +17,7 @@ def is_prime(n):
 
 try:
     number = int(sys.argv[1])
-    if is_prime(number):
+    if nombre_premier(number):
         print("C'est un nombre premier")
     else:
         print("Ce n'est pas un nombre premier")

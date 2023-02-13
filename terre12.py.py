@@ -10,7 +10,7 @@ monHeure = sys.argv[1]
 partie = monHeure.split(":")
 heures = partie[0]
 minutes_et_jour = partie[1][:-2]
-minutes = partie[1][:+2]
+minutes = partie[1][:2]
 jourNuit = partie[1][-2:]
 
 
