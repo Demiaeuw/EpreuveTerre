@@ -3,29 +3,25 @@
 
 #avec une boucle for a la place du a[::-1]
 
-"""
-
-def chaine_de_char():
-    resultat = ""
-    for i in range(1, len(sys.argv)):
-        resultat += sys.argv[i] + " "
-    return resultat
-
-def inverse(a):
-    return a[::-1]
-
-text = chaine_de_char()
-textInverse = inverse(text)
-print(textInverse)
-
-"""
 
 import sys
 
-def chaine_de_char():
-    resultat = ""
-    for i in range(1, len(sys.argv)):
-        resultat += sys.argv[i] + " "
-    return resultat
+argument = str(sys.argv[1])
+
+reverse_String = ""
+count = len(argument)
+
+while count > 0:   
+    reverse_String += argument[count - 1] 
+    count = count - 1
 
 
+try:
+    if len(sys.argv) > 2:
+        print("Merci de metre vos arguments entre guillemet ")
+    elif len(sys.argv) == 1:
+        print("Merci de fournir un argument")
+    else:
+        print(reverse_String)
+except ValueError:
+    print("Entrer un argument valide")
