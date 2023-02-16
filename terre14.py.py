@@ -37,6 +37,7 @@ for argument in arguments:
             nombrePasPremier.append(argument)
     except ValueError:
         nombrePasPremier.append(argument)
+
 if len(arguments) <= 1:
     print("Ce n'est pas une liste !")
 elif nombrePasPremier:

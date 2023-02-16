@@ -16,10 +16,8 @@ if len(sys.argv) < 2:
     print("Entrer une heure au format hh:mm")
 else:
     def changement(heures):
-        if heures == 00:
+        if heures == 00 and heures < 12:
             return str(heures) + ":" + str(minutes) + "AM"
-        elif heures < 12:
-            return str(heures) + ":" + str(minutes) +"AM"
         elif heures == 12:
             return str(heures) + ":" + str(minutes) + "PM"
         else:
